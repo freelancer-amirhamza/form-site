@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Roboto+Slab:wght@400;500&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+ html body{
+    height:auto;
+    margin: 0 auto;
+    font-family: 'Roboto Slab', serif;
+    background:linear-gradient(
+        to bottom,
+        rgba(3, 70, 59, 0.797),
+        rgba(3, 70, 59, 0.797) 
+      ), url(./kaleb-tapp-1deQbU6DhBg-unsplash.jpg) no-repeat ;
+    background-size:cover;
+
+}
+
+.container{
+    height: 100vh;
+    margin: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.contents{
+grid-column:2 / 6;
+justify-self: start;
+grid-row-gap: 10px;
+margin-bottom: -15px;
+}
+.contents .title{
+    font-family: 'Prata', serif;
+    font-size: 2rem;
+    text-align: left;
+    color: #fff;
+}
+.contents .title span{
+    color: #8b6161;
+}
+.content{
+    display: flex;
+    color: #fff;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;  
+    font-family: 'Roboto Slab', serif;
+    margin-top: -10px;
+}
+ .number{
+    padding: 10px 12px 17px 13px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    font-size: 0.8rem;
+    align-self:center;
+    cursor: pointer;
+}
+.number:hover{
+    color: white;
+    box-shadow: 0 0 1rem #fff;
+}
+.content .text{
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+
+
+/* Play section */
+
+
+.play-btn{
+    grid-column:6 / 8;
+    align-items: center;
+    justify-self: center;
+}
+.play-btn a i {
+    text-decoration: none;
+    color: white;
+    font-size: 4rem;
+    padding: 10px;
+    background-color: #8b6161;
+    border-radius: 50%;
+    text-align: center;
+
+}
+.play-btn a i:hover{
+    color: white;
+    box-shadow: 0 0 1rem #fff;
+}
+/* Form section */
+
+
+.form{
+    grid-column: 8 / 12;
+}
+form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 15px 10px;
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+}
+.form-item label{
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: 100;
+    padding-bottom: 5px;
+}
+.form-item select{
+    padding: 15px 20px;
+    border-radius: 5px;
+    outline: none;
+}
+.form-item input{
+    padding: 15px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  } */ 
